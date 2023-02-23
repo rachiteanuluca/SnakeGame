@@ -12,7 +12,7 @@ using System.Drawing.Imaging; //bitmap imaging for snapshoting
 
 namespace SnakeGame
 {
-    public partial class Form1 : Form
+    public partial class SnakeGameEngine : Form
     {
         //variables
         private List<Circle> snakeBody = new List<Circle>();//snake body
@@ -28,7 +28,7 @@ namespace SnakeGame
         //directions
         bool goLeft, goRight, goUp, goDown;
 
-        public Form1()
+        public SnakeGameEngine()
         {
             InitializeComponent();
             new Settings(); //init the static components of the settings class
