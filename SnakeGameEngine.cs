@@ -106,9 +106,9 @@ namespace SnakeGame
                 Bitmap bmp = new Bitmap(width, height);
                 gameCanvas.DrawToBitmap(bmp, new Rectangle(0,0,width,height));
                 bmp.Save(dialog.FileName, ImageFormat.Jpeg);
-                gameCanvas.Controls.Remove(caption);
+                
             }
-            
+            gameCanvas.Controls.Remove(caption);
         }
 
         private void GameTimerEvent(object sender, EventArgs e)
